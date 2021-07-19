@@ -1,0 +1,37 @@
+body{
+    font-family: Cambria, Cochin, 'Times New Roman', serif;
+}
+
+body h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#trophy {
+    margin-top: 5%;
+    float: left;
+}
+
+#first_award_section {
+    float: left;
+    margin-top: 20%;
+    width: 600px;
+}
+
+#second_award_section {
+    float: left;
+    margin-top: 5%;
+    width: 500px;
+}
+
+.medal {
+    float: left;
+    margin-right: 5px;
+}
+
+body p {
+    font-size: 1.5em;
+    padding-top: 5%;
+}
+

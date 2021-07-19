@@ -1,0 +1,263 @@
+@font-face {
+    font-family:'Petit Formal Script';
+	src: url(../font/PetitFormalScript-Regular.ttf); 
+    
+}
+
+.rotate {
+    transform: rotate(-35deg);
+}
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(199, 199, 199);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px;
+}
+
+/********** NAV STYLING **********/
+#nav {
+    background-color: rgb(68, 68, 70);
+    font-size: 1.2em;
+    height: 1.5em;
+}
+
+#nav li {
+    display: inline;
+    margin-left: 1%;
+}
+
+nav li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#nav li a:hover{
+    color: rgb(68, 68, 70);
+    background: white;
+}
+
+
+/******** CONTENT WRAPPER STYLING ********/
+#content_wrapper {
+    width: 80%;
+    margin: 10% auto; 
+}
+
+
+/********* HEADER BLOCKS **********/
+.headers {
+    display: block;
+    position: relative;
+    height: 100px;
+    background-color: rgb(68, 68, 70);
+    color:white;
+    font-size: 2.2em;
+}
+
+.header_images{
+    display:block;
+    float: right;
+}
+
+.headers h2 {
+    position: absolute; /*Absolute used as design choice to maintain position within the header container as it contracts*/
+    float: left;
+    padding: 0.8em;
+}
+
+#web_dev_header {
+    height: 200px;
+}
+
+#web_dev_text {
+    position: absolute; /*Positioned to be an ancestor for #aspiring*/
+    font-size: 1.3em;
+    left: 10%;
+    top: 35%;
+}
+
+#aspiring {
+    position: absolute; /*Anchored this element to the parent #web_dev_text for styling purposes*/
+    font-family: 'Petit Formal Script', Cambria, Times, serif; 
+    font-size: 0.3em;
+    width: 6ch;
+    top: -45%;
+    left: -16%;
+}
+
+
+
+/******** INFO CONTAINERS *******/
+.info_containers {
+    margin: 5% 0%;
+    min-width: 600px;
+    border: 7px solid rgb(68, 68, 70);
+    overflow: auto;
+}
+
+/********** PROFILE PIC ***********/
+#profile_pic {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 52%;
+    margin-bottom: 5%;
+}
+
+
+/******** LEFT COLUMN *********/
+#col_left {
+    position: relative;
+    float: left;
+}
+
+.contact_info {
+    float: left;
+    width: 90%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+.contact_info:first-of-type {
+    margin-top: 5%;
+}
+
+#name {
+    font-size: 2em;
+    text-align: center;
+}
+
+
+/****** RIGHT COLUMN ********/
+#col_right {
+    position: relative;
+}
+
+.history {
+    position: relative;
+    margin: 20px 10px 5px;
+    
+}
+
+.history h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.history p{
+    margin-top: 10px;
+}
+
+.history a {
+    color: rgb(25,125,138);
+    text-decoration: none;
+}
+
+.history a:hover {
+    color: rgb(21, 173, 235);
+}
+
+#about_me {
+    margin-top: 20px;
+}
+
+
+/********* SKILLS SECTION *********/
+#skills li {
+    margin: 2%; 
+    display: inline-block;
+}
+
+
+/******** EMPLOYMENT SECTION **********/
+#employment_history h3 {
+    font-weight: bold;
+    margin: 2%;
+}
+
+#employment_history p{
+    margin: 2%;
+}
+
+#invisible_header{
+    display: none; /*Header included to pass W3C validator only*/
+}
+
+
+
+/******* MOBILE FORMAT ***********/
+@media (max-width:600px) {
+    
+    .headers {
+        height: 70px;
+    }
+
+    .header_images {
+        height:70px;
+        width: 100px;
+    }
+
+    .headers h2 {
+        font-size: 0.6em;    
+    }
+
+    .info_containers {
+        min-width: 200px;
+    }
+
+    #col_left{
+        clear: right;
+    }
+
+    #col_right{
+        position: relative;
+        min-width: 40%;
+    } 
+    
+    #web_dev_header {
+        height: 100px;
+    }
+
+    #web_dev_text {
+        font-size: 0.8em;
+    }
+
+    #web_dev_geometric {
+        height: 100px;
+        width: 150px;
+    }
+ 
+    #contact_number {
+        margin-top: 5%;
+    }
+
+}
+
+
+/********** DESKTOP FORMAT ***********/
+@media (min-width:601px) {
+    
+    #col_left{
+        width: 49%;
+        border-right: 7px solid rgb(68, 68, 70);
+    }
+    
+    #col_right{
+        overflow: auto;
+        left: -6.7px;
+        border-left: 7px solid rgb(68, 68, 70);
+    }   
+
+}
