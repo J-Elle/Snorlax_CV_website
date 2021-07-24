@@ -161,6 +161,8 @@ nav li a {
 }
 
 .history a {
+    display: block;
+    margin-top: 10px;
     color: rgb(25,125,138);
     text-decoration: none;
 }
@@ -187,10 +189,17 @@ nav li a {
     margin: 2%;
 }
 
-#employment_history p{
-    margin: 2%;
+#employment_history p {
+    margin-left: 2%;
 }
 
+#employment_history p:first-of-type{
+    margin-top: 2%;
+}
+
+#employment_history p:last-of-type{
+    margin-bottom: 2%;
+}
 #invisible_header{
     display: none; /*Header included to pass W3C validator only*/
 }
